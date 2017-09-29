@@ -116,7 +116,8 @@ int main()
     std::cout << " Number of strokes; number < 8 " << std::endl;
     std::cin >> number;
     if ((ab.first == cd.first) || (ab.second == cd.second) ||
-    (ab.first + number == cd.first && ab.second + number == cd.second))
+
+        (ab.first + number == cd.first && ab.second + number == cd.second))
     {
         std::cout << " Threatens the field " << std::endl;
     }
@@ -165,6 +166,7 @@ int main()
     else
     {
         number = a;
+    }
     for (int i = a + 1; i <= 20; ++i)
     {
         number = number * i;
