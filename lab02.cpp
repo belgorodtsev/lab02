@@ -149,7 +149,7 @@ int main()
     std::cout << " Write a number 1 < a < 20 " << std::endl;
     int a = 0;
     std::cin >> a;
-    int number a = 0;
+    int number = 0;
     if (a <= 1 || a >= 20)
     {
         std::cout << " Error !" << std::endl;
