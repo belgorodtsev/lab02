@@ -88,7 +88,7 @@ int main()
         std::cout << " Does not threaten the field " << std::endl;
     }
     // Слон
-    std::cout << " The number of cells that a figure must pass through; number < 8 " << std::endl;
+    std::cout << " Number of strokes; number < 8 " << std::endl;
     int number = 0;
     std::cin >> number;
     if ((ab.first + number == cd.first && ab.second + number == cd.second))
@@ -100,7 +100,7 @@ int main()
         std::cout << " Does not threaten the field " << std::endl;
     }
     // Король
-    std::cout << " The number of cells that a figure must pass through; number = -1 or +1 " << std::endl;
+    std::cout << " Number of strokes; number = -1 or +1 " << std::endl;
     std::cin >> number;
     if ((ab.first + number == cd.first && ab.second + number == cd.second) ||
     (ab.first == cd.first && ab.second + number == cd.second) ||
@@ -204,7 +204,7 @@ int main()
         {
             number = number * i;
         }
-    } 
+    }
     std::cout << " Composition = " << number << std::endl;
 return 0;
 }
