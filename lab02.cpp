@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 int main()
 {
@@ -88,10 +89,7 @@ int main()
         std::cout << " Does not threaten the field " << std::endl;
     }
     // Слон
-    std::cout << " Number of strokes; number < 8 " << std::endl;
-    int number = 0;
-    std::cin >> number;
-    if ((ab.first + number == cd.first && ab.second + number == cd.second))
+    if ((abs(ab.first - cd.first) == (abs(ab.second - cd.second))))
     {
         std::cout << " Threatens the field " << std::endl;
     }
@@ -100,24 +98,17 @@ int main()
         std::cout << " Does not threaten the field " << std::endl;
     }
     // Король
-    std::cout << " Number of strokes; number = -1 or +1 " << std::endl;
-    std::cin >> number;
-    if ((ab.first + number == cd.first && ab.second + number == cd.second) ||
-    (ab.first == cd.first && ab.second + number == cd.second) ||
-    (ab.first + number == cd.first && ab.second == cd.second))
+    if ((abs(ab.first - cd.first) == 1) || (abs(ab.second - cd.second) == 1))
     {
-    std::cout << " Threatens the field " << std::endl;
+        std::cout << " Threatens the field " << std::endl;
     }
     else
     {
         std::cout << " Does not threaten the field " << std::endl;
     }
-    // Ферзь
-    std::cout << " Number of strokes; number < 8 " << std::endl;
-    std::cin >> number;
-    if ((ab.first == cd.first) || (ab.second == cd.second) ||
-
-        (ab.first + number == cd.first && ab.second + number == cd.second))
+    // Ферзь 
+    if ((abs(ab.first - cd.first) == (abs(ab.second - cd.second))) || 
+    (abs(ab.first - cd.first) == (abs(ab.second - cd.second))))
     {
         std::cout << " Threatens the field " << std::endl;
     }
@@ -126,16 +117,14 @@ int main()
         std::cout << " Does not threaten the field " << std::endl;
     }
     // Белая пешка
-    std::cout << " Number of strokes; number = +1 or +2 if a = 2 " << std::endl;
-    std::cin >> number;
-    if (ab.first == cd.first && ab.second + number == cd.second)
+    if ((abs(ab.first - cd.second) == 0) || (abs(ab.second - cd.second) == 1))
     {
         std::cout << " Threatens the field " << std::endl;
     }
-    if (ab.first + 1 == cd.first && ab.second + 1 == cd.second)
+    else if ((abs(ab.first - cd.second) == 1) || (abs(ab.second - cd.second) == 1))
     {
-        std::cout << " Threatens the field " << std::endl;
-    }
+        std::cout << " Beats the figure " << std::endl;
+    }	
     else
     {
         std::cout << " Does not threaten the field " << std::endl;
