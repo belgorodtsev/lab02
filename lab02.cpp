@@ -66,7 +66,8 @@ int main()
     if (x > 100 || y > 100 || z > 100)
     {
         std::cout << " Number > 100 " << std::endl;
-    }    else
+    }   
+    else
     {
         std::cout << " Error! " << std::endl;
     }
@@ -123,7 +124,7 @@ int main()
     else if ((abs(ab.first - cd.second) == 1) || (abs(ab.second - cd.second) == 1))
     {
         std::cout << " Beats the figure " << std::endl;
-    }	
+    }
     else
     {
         std::cout << " Does not threaten the field " << std::endl;
