@@ -106,8 +106,8 @@ int main()
     {
         std::cout << " Does not threaten the field " << std::endl;
     }
-    // Ферзь 
-    if ((abs(ab.first - cd.first) == (abs(ab.second - cd.second))) || 
+    // Ферзь
+    if ((abs(ab.first - cd.first) == (abs(ab.second - cd.second))) ||
     (abs(ab.first - cd.first) == (abs(ab.second - cd.second))))
     {
         std::cout << " Threatens the field " << std::endl;
@@ -115,6 +115,7 @@ int main()
     else
     {
         std::cout << " Does not threaten the field " << std::endl;
+
     }
     // Белая пешка
     if ((abs(ab.first - cd.second) == 0) || (abs(ab.second - cd.second) == 1))
@@ -148,6 +149,7 @@ int main()
     std::cout << " Write a number 1 < a < 20 " << std::endl;
     int a = 0;
     std::cin >> a;
+    int number a = 0;
     if (a <= 1 || a >= 20)
     {
         std::cout << " Error !" << std::endl;
