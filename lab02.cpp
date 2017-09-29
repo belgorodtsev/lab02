@@ -112,8 +112,8 @@ int main()
     {
         std::cout << " Does not threaten the field " << std::endl;
     }
-    // Ферзь 
-    std::cout << " The number of cells that a figure must pass through; number < 8 " << std::endl;
+    // Ферзь
+    std::cout << " Number of strokes; number < 8 " << std::endl;
     std::cin >> number;
     if ((ab.first == cd.first) || (ab.second == cd.second) ||
     (ab.first + number == cd.first && ab.second + number == cd.second))
@@ -125,7 +125,7 @@ int main()
         std::cout << " Does not threaten the field " << std::endl;
     }
     // Белая пешка
-    std::cout << " The number of cells that a figure must pass through; number = +1 or +2 if a = 2 " << std::endl;
+    std::cout << " Number of strokes; number = +1 or +2 if a = 2 " << std::endl;
     std::cin >> number;
     if (ab.first == cd.first && ab.second + number == cd.second)
     {
@@ -134,7 +134,7 @@ int main()
     if (ab.first + 1 == cd.first && ab.second + 1 == cd.second)
     {
         std::cout << " Threatens the field " << std::endl;
-    }	
+    }
     else
     {
         std::cout << " Does not threaten the field " << std::endl;
@@ -151,7 +151,7 @@ int main()
     int number1 = 8;
     for (int i = 9; i <= 15; ++i)
     {
-	    number1 = number1 * i;
+        number1 = number1 * i;
     }
     std::cout << " Composition = " << number1 << std::endl;
     //Произведение всех целых чисел от а до 20 (значение а вводится с клавиатуры 1<а<20)
@@ -159,15 +159,15 @@ int main()
     int a = 0;
     std::cin >> a;
     if (a <= 1 || a >= 20)
-    { 
+    {
         std::cout << " Error !" << std::endl;
     }
-    else 
+    else
     {
         number = a;
     for (int i = a + 1; i <= 20; ++i)
     {
-	number = number * i;	
+        number = number * i;
     }
     std::cout << " Composition = " << number << std::endl;
     // Найти произведение всех целых чисел от 1 до b (значение b вводится с клавиатуры 1<b<20)
@@ -178,13 +178,13 @@ int main()
     {
         std::cout << " Error !" << std::endl;
     }
-        else 
+        else
     {
         number = 1;
         for (int i = 2; i <= b; ++i)
-	{
+        {
             number = number * i;
-	}
+        }
     }
     std::cout << " Composition = " << number << std::endl;
     // Произведение всех целых чисел от a до b (значения a и b вводятся с клавиатуры; b >= a)
@@ -197,14 +197,14 @@ int main()
     {
         std::cout << " Error !" << std::endl;
     }
-    else 
+    else
     {
         number = a1;
         for (int i = a1 + 1; i <= b1; ++i)
-	{
+        {
             number = number * i;
         }
-    }    
+    } 
     std::cout << " Composition = " << number << std::endl;
 return 0;
 }
