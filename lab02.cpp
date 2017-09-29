@@ -31,7 +31,7 @@ int main()
         std::cout << " Error! " << std::endl;
     }
     // Хотя бы одно равно нулю
-    if (x == 0 || y == 0)    
+    if (x == 0 || y == 0)
     {
         std::cout << " Number = 0 " << std::endl;
     }
