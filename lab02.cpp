@@ -1,5 +1,5 @@
-#include <iostream>
 #include <cmath>
+#include <iostream>
 
 int main()
 {
@@ -11,9 +11,7 @@ int main()
     int z = 0;
     std::cin >> z;
     // Каждое из чисел нечетное
-    int r = x % 2;
-    int t = y % 2;
-    if (r != 0 && t != 0)
+    if ((x % 2 != 0) && (y % 2 != 0))
     {
         std::cout << " x, y Odd!! ! " << std::endl;
     }
@@ -22,7 +20,7 @@ int main()
         std::cout << " Error! " << std::endl;
     }
     // Только одно из чисел меньше 20
-    if (x < 20 || y < 20)
+    if ((x < 20 && y > 20) || (x > 20 && y < 20))
     {
         std::cout << " Number < 20 " << std::endl;
     }
@@ -39,7 +37,7 @@ int main()
     {
         std::cout << " Error! " << std::endl;
     }
-    //Каждое из чисел отрицательное
+    // Каждое из чисел отрицательное
     if (x < 0 && y < 0 && z < 0)
     {
         std::cout << " Number < 0 " << std::endl;
@@ -53,8 +51,8 @@ int main()
     int w = y % 5;
     int e = z % 5;
     if ((q == 0 && w != 0 && e != 0) ||
-    (w == 0 && q != 0 && e != 0) ||
-    (e == 0 && q != 0 && w != 0))
+        (w == 0 && q != 0 && e != 0) ||
+        (e == 0 && q != 0 && w != 0))
     {
         std::cout << " One number / 5 " << std::endl;
     }
@@ -108,7 +106,7 @@ int main()
     }
     // Ферзь
     if ((abs(ab.first - cd.first) == (abs(ab.second - cd.second))) ||
-    (abs(ab.first - cd.first) == (abs(ab.second - cd.second))))
+        (abs(ab.first - cd.first) == (abs(ab.second - cd.second))))
     {
         std::cout << " Threatens the field " << std::endl;
     }
@@ -144,7 +142,7 @@ int main()
         number1 = number1 * i;
     }
     std::cout << " Composition = " << number1 << std::endl;
-    //Произведение всех целых чисел от а до 20 (значение а вводится с клавиатуры 1<а<20)
+    // Произведение всех целых чисел от а до 20 (значение а вводится с клавиатуры 1<а<20)
     std::cout << " Write a number 1 < a < 20 " << std::endl;
     int a = 0;
     std::cin >> a;
@@ -170,7 +168,7 @@ int main()
     {
         std::cout << " Error !" << std::endl;
     }
-        else
+    else
     {
         number = 1;
         for (int i = 2; i <= b; ++i)
@@ -198,5 +196,5 @@ int main()
         }
     }
     std::cout << " Composition = " << number << std::endl;
-return 0;
+    return 0;
 }
